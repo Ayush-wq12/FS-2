@@ -1,0 +1,126 @@
+.app-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.app-header h1 {
+  margin-bottom: 10px;
+  font-size: 2.6rem;
+}
+
+.app-header p {
+  color: #5b6475;
+  font-size: 1.05rem;
+}
+
+.panel-grid,
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
+}
+
+.panel h2 {
+  margin-bottom: 16px;
+  font-size: 1.4rem;
+}
+
+.panel input,
+.panel textarea,
+.panel select,
+.panel button {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #dfe3ea;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  font: inherit;
+}
+
+.panel textarea {
+  resize: vertical;
+}
+
+.panel button {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.panel button:hover {
+  background: #4338ca;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.item-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.post-card p,
+.post-card small,
+.item-card span {
+  color: #475569;
+}
+
+.like-btn,
+.delete-btn {
+  width: auto !important;
+  padding: 8px 12px !important;
+  margin-bottom: 0 !important;
+}
+
+.delete-btn {
+  background: #ef4444 !important;
+}
+
+.delete-btn:hover {
+  background: #dc2626 !important;
+}
+
+.like-btn {
+  background: #10b981 !important;
+}
+
+.like-btn:hover {
+  background: #059669 !important;
+}
