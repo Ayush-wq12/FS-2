@@ -1,0 +1,66 @@
+#root { min-height: 100vh; }
+
+.app-shell { max-width: 1180px; margin: 0 auto; padding: 0 48px 30px; }
+.topbar { height: 78px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #d6d2c7; }
+.brand { display: inline-flex; align-items: center; gap: 11px; color: #18313b; text-decoration: none; font-size: 14px; font-weight: 800; letter-spacing: 2px; }
+.brand-mark { display: grid; place-items: center; width: 29px; height: 29px; color: #f4f0e8; background: #18313b; font-family: Georgia, serif; font-size: 20px; font-weight: 400; }
+.brand-dot { color: #ee7255; padding: 0 2px; }
+.lab-label, .eyebrow, .panel-kicker, footer, .flow-map, .session-meta span, .claim-list span { font-size: 10px; font-weight: 800; letter-spacing: 1.6px; }
+.lab-label, footer { color: #788680; }
+.intro { display: flex; justify-content: space-between; align-items: end; gap: 32px; padding: 75px 0 57px; animation: reveal .55s ease-out both; }
+.eyebrow, .panel-kicker { color: #ee7255; margin: 0 0 15px; }
+h1, h2, p { margin-top: 0; }
+h1 { max-width: 650px; margin-bottom: 18px; color: #18313b; font-family: Georgia, serif; font-size: clamp(42px, 6vw, 74px); font-weight: 400; line-height: .98; letter-spacing: -2px; }
+h1 em { color: #ee7255; font-style: italic; }
+.intro-copy { max-width: 535px; color: #6b7b7b; font-size: 15px; line-height: 1.65; }
+.flow-map { display: flex; align-items: center; flex-shrink: 0; color: #87938f; }
+.flow-map strong { display: block; margin-top: 5px; color: #18313b; font-size: 10px; letter-spacing: 1px; }
+.flow-map i { width: 35px; height: 1px; margin: 0 10px 15px; background: #c8c5ba; }
+.workspace { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.panel { min-width: 0; padding: 30px; border: 1px solid #d6d2c7; background: rgba(255, 253, 248, .72); animation: reveal .55s ease-out both; }
+.panel:nth-child(2) { animation-delay: .08s; }
+.panel:nth-child(3) { grid-column: 1 / -1; animation-delay: .16s; }
+.panel-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+h2 { margin-bottom: 24px; color: #18313b; font-family: Georgia, serif; font-size: 29px; font-weight: 400; }
+.panel-copy { color: #75847f; font-size: 13px; line-height: 1.55; margin: -9px 0 25px; }
+label { display: block; margin: 18px 0 8px; color: #48605f; font-size: 12px; font-weight: 700; }
+input { width: 100%; padding: 13px 14px; border: 1px solid #c9cec4; outline: none; color: #18313b; background: #fffdf8; font-size: 14px; transition: border-color .2s, box-shadow .2s; }
+input:focus { border-color: #ee7255; box-shadow: 0 0 0 3px rgba(238, 114, 85, .12); }
+.password-field { position: relative; }
+.password-field input { padding-right: 62px; }
+.text-button { position: absolute; right: 12px; top: 11px; padding: 4px; border: 0; color: #ee7255; background: transparent; font-size: 11px; font-weight: 700; }
+.primary-button, .secondary-button, .run-button { border: 0; font-size: 12px; font-weight: 800; letter-spacing: .4px; transition: transform .2s, background .2s; }
+.primary-button { width: 100%; margin-top: 25px; padding: 15px; color: #fffdf8; background: #18313b; }
+.primary-button:hover, .run-button:hover { background: #ee7255; transform: translateY(-2px); }
+.primary-button span, .secondary-button span, .run-button span { margin-left: 12px; font-size: 17px; font-weight: 400; }
+.demo-credentials { display: flex; align-items: center; flex-wrap: wrap; gap: 9px; margin-top: 22px; color: #8b948d; font-size: 9px; letter-spacing: 1px; }
+.demo-credentials code, .auth-header { padding: 5px 7px; color: #48605f; background: #ece9de; font-family: Consolas, monospace; font-size: 10px; }
+.form-error { margin: 12px 0 -8px; color: #bd4f3c; font-size: 12px; }
+.status-pill, .token-type, .method-badge, .role-tag { display: inline-flex; align-items: center; white-space: nowrap; font-size: 10px; font-weight: 800; letter-spacing: .7px; }
+.status-pill { gap: 7px; padding: 7px 9px; border: 1px solid #dedbd1; color: #89928c; }
+.status-pill span { width: 6px; height: 6px; border-radius: 50%; background: #a8b0a9; }
+.status-pill.live { border-color: #b5d6bf; color: #38865a; background: #edf7ee; }
+.status-pill.live span { background: #4ba96c; }
+.token-type, .method-badge { padding: 7px 9px; color: #52706a; background: #e7efe8; }
+.profile-row { display: flex; align-items: center; gap: 14px; margin: 3px 0 27px; }
+.avatar { display: grid; place-items: center; width: 48px; height: 48px; color: #fffdf8; background: #ee7255; font-family: Georgia, serif; font-size: 17px; }
+.profile-row strong { display: block; font-family: Georgia, serif; font-size: 19px; font-weight: 400; }
+.profile-row p { margin: 3px 0 0; color: #788680; font-size: 12px; }
+.role-tag { margin-left: auto; padding: 6px 8px; color: #ee7255; border: 1px solid #efb2a4; }
+.session-meta, .claim-list { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding-top: 16px; border-top: 1px solid #dedbd1; }
+.session-meta strong, .claim-list strong { display: block; margin-top: 6px; color: #48605f; font-family: Consolas, monospace; font-size: 11px; font-weight: 400; }
+.session-meta span, .claim-list span { color: #97a099; font-size: 9px; }
+.secondary-button { margin-top: 27px; padding: 10px 0; color: #ee7255; background: transparent; }
+.token-display { overflow-wrap: anywhere; min-height: 96px; margin: -1px 0 23px; padding: 15px; border: 1px solid #d6d2c7; background: #f6f2e9; font-family: Consolas, monospace; font-size: 11px; line-height: 1.8; }
+.token-header { color: #da634d; }.token-payload { color: #337d76; }.token-signature { color: #647ba3; }
+.claim-list { margin-top: 0; }
+.empty-token { display: grid; place-items: center; min-height: 135px; margin-bottom: 23px; border: 1px dashed #cac8bd; color: #9ca49d; text-align: center; }
+.lock-symbol { color: #ee7255; font-size: 28px; }.empty-token p { max-width: 190px; margin: 7px 0 0; font-size: 12px; line-height: 1.5; }
+.security-note { display: flex; gap: 8px; margin: 22px 0 0; color: #788680; font-size: 10px; line-height: 1.5; }.security-note span { display: grid; place-items: center; flex: 0 0 15px; height: 15px; border: 1px solid #9ca49d; border-radius: 50%; font-weight: 700; }
+.request-line { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 13px 0; border-top: 1px solid #dedbd1; border-bottom: 1px solid #dedbd1; color: #52706a; font-family: Consolas, monospace; font-size: 13px; }
+.run-button { padding: 10px 14px; color: #fffdf8; background: #18313b; }.run-button span { font-size: 15px; }
+.request-result { display: flex; align-items: center; gap: 16px; min-height: 83px; margin: 20px 0 15px; padding: 16px; background: #eeece3; }.request-result.authorized { background: #e7f2e9; }.request-result.rejected { background: #f9eae5; }.result-icon { display: grid; place-items: center; width: 30px; height: 30px; color: #7e8982; border: 1px solid #aeb6ac; border-radius: 50%; font-size: 16px; }.authorized .result-icon { color: #378258; border-color: #81b695; }.rejected .result-icon { color: #bd4f3c; border-color: #df9785; }.request-result strong { color: #48605f; font-size: 13px; }.request-result p { margin: 4px 0 0; color: #788680; font-size: 11px; }.auth-header { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #7a8580; }
+footer { display: flex; justify-content: space-between; padding-top: 24px; }
+@keyframes reveal { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 760px) { .app-shell { padding: 0 20px 24px; }.topbar { height: 65px; }.lab-label { display: none; }.intro { display: block; padding: 55px 0 40px; }.flow-map { margin-top: 32px; }.workspace { grid-template-columns: 1fr; }.panel:nth-child(3) { grid-column: auto; }.panel { padding: 23px; } h1 { font-size: 47px; }.role-tag { margin-left: auto; } footer { display: block; line-height: 2; } }
+@media (max-width: 430px) { .flow-map { font-size: 8px; }.flow-map i { width: 18px; margin-inline: 5px; }.panel-heading { display: block; }.status-pill, .token-type, .method-badge { margin-top: 3px; }.request-line { align-items: flex-start; flex-direction: column; }.run-button { width: 100%; }.demo-credentials { align-items: flex-start; flex-direction: column; }.role-tag { font-size: 8px; } }
