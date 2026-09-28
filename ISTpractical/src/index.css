@@ -1,0 +1,51 @@
+:root {
+  --ink: #202c28;
+  --ink-soft: #475650;
+  --muted: #7b8781;
+  --line: #dfe5e1;
+  --paper: #ffffff;
+  --orange: #e87543;
+  --orange-dark: #c55b32;
+  --teal: #277766;
+  --teal-dark: #1d5d50;
+  --mint: #edf4f0;
+  --error: #bd4139;
+  --sans: 'Trebuchet MS', 'Segoe UI', sans-serif;
+  --display: Georgia, 'Times New Roman', serif;
+  --mono: 'Cascadia Code', Consolas, monospace;
+
+  font: 15px/1.5 var(--sans);
+  color: var(--ink);
+  background:
+    radial-gradient(ellipse at 88% 4%, rgb(235 203 176 / 22%), transparent 31rem),
+    linear-gradient(180deg, #f8f8f3 0%, #f3f6f2 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+textarea {
+  font-family: inherit;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid rgb(39 119 102 / 45%);
+  outline-offset: 3px;
+}
+
+#root {
+  min-height: 100vh;
+}
